@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMB Farm LLC | Livestock Farm in New Carlisle, Ohio</title>
+<meta name="description" content="RMB Farm LLC is a family-run livestock farm at 788 Free Rd, New Carlisle, Ohio, raising pigs, chickens and eggs. Call 937-605-3352 for availability.">
+<meta name="theme-color" content="#7a2c22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4eee2;          /* feed-sack oatmeal */
+  --bg-alt:#ebe2d0;
+  --surface:#fbf8f1;
+  --ink:#24211c;
+  --ink-soft:#5a5348;
+  --line:#d9ccb3;
+  --barn:#7a2c22;        /* barn oxblood */
+  --barn-deep:#5c1f18;
+  --pasture:#4d5a2c;     /* pasture olive */
+  --yolk:#d6962a;        /* egg-yolk amber */
+  --on-barn:#fbf3e6;
+  --shadow:0 1px 2px rgba(36,33,28,.06),0 8px 24px rgba(36,33,28,.08);
+  --radius:14px;
+  --display:"Big Shoulders Display","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --header-h:64px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#17150f;--bg-alt:#1f1c15;--surface:#25211a;--ink:#f1eadb;--ink-soft:#b9af9c;--line:#3a342a;
+    --barn:#c0503f;--barn-deep:#8f3428;--pasture:#9fae6e;--yolk:#e8ae4a;--on-barn:#fff7ec;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17150f;--bg-alt:#1f1c15;--surface:#25211a;--ink:#f1eadb;--ink-soft:#b9af9c;--line:#3a342a;
+  --barn:#c0503f;--barn-deep:#8f3428;--pasture:#9fae6e;--yolk:#e8ae4a;--on-barn:#fff7ec;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--barn)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yolk);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);line-height:1;letter-spacing:.01em;text-transform:uppercase;margin:0}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
+section{scroll-margin-top:calc(var(--header-h) + 12px)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:var(--barn);color:var(--on-barn);font:900 1.05rem/1 var(--display);letter-spacing:.04em}
+.brand-name{font:800 1.45rem/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.brand-name small{display:block;font:600 .68rem/1.2 var(--body);letter-spacing:.14em;color:var(--ink-soft);margin-top:3px}
+.nav{display:none;gap:22px}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{color:var(--barn)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;font:700 .98rem/1 var(--body);text-decoration:none;border:2px solid transparent;white-space:nowrap}
+.btn-barn{background:var(--barn);color:var(--on-barn)}
+.btn-barn:hover{background:var(--barn-deep)}
+.btn-ghost{border-color:currentColor;color:inherit}
+.btn svg{width:18px;height:18px;flex:none}
+.call-short{display:inline}.call-long{display:none}
+@media (min-width:860px){.nav{display:flex}.call-short{display:none}.call-long{display:inline}}
+
+/* hero */
+.hero{position:relative;min-height:min(86vh,720px);display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 60%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,16,10,.15) 0%,rgba(20,16,10,.35) 45%,rgba(20,16,10,.82) 100%)}
+.hero .wrap{padding-top:96px;padding-bottom:48px}
+.eyebrow{display:inline-block;font:700 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;padding:8px 12px;border-radius:999px;background:var(--yolk);color:#24170a}
+.hero h1{font-size:clamp(3rem,11vw,6.6rem);font-weight:900;margin:18px 0 14px;max-width:12ch;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero h1 span{color:#f0c46b}
+.hero p.lede{font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:56ch;margin:0 0 26px;color:#f3ece0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-ghost{color:#fff}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* fact strip */
+.facts{background:var(--barn);color:var(--on-barn)}
+.facts ul{list-style:none;margin:0 auto;padding:22px 16px;display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.facts li{display:flex;flex-direction:column;gap:2px}
+.facts b{font:800 1.35rem/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.facts span{font-size:.85rem;opacity:.85}
+.facts a{color:inherit}
+@media (min-width:860px){.facts ul{grid-template-columns:repeat(4,1fr)}}
+
+/* sections */
+.sec{padding:72px 0}
+.sec-alt{background:var(--bg-alt)}
+.kicker{font:700 .8rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--pasture);margin:0 0 10px}
+.sec h2{font-size:clamp(2.3rem,6vw,3.6rem);font-weight:800;margin-bottom:16px}
+.intro{max-width:62ch;color:var(--ink-soft);margin:0 0 34px}
+
+.raise{display:grid;gap:22px}
+@media (min-width:760px){.raise{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.9rem;font-weight:800;color:var(--barn)}
+.card p{margin:0;color:var(--ink-soft)}
+.tag{align-self:flex-start;margin-top:auto;font:600 .8rem/1 var(--body);padding:7px 10px;border-radius:999px;background:color-mix(in srgb,var(--pasture) 16%,transparent);color:var(--pasture)}
+
+/* how */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
+@media (min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font:900 2.6rem/1 var(--display);color:var(--yolk);margin-bottom:8px}
+.steps h3{font-size:1.5rem;font-weight:800;margin-bottom:6px}
+.steps p{margin:0;color:var(--ink-soft)}
+.note{margin:26px 0 0;padding:16px 18px;border-left:4px solid var(--yolk);background:var(--surface);border-radius:0 10px 10px 0;color:var(--ink-soft);max-width:72ch}
+
+/* about */
+.about{display:grid;gap:30px;align-items:center}
+@media (min-width:860px){.about{grid-template-columns:1.05fr 1fr;gap:48px}}
+.about img{border-radius:var(--radius);aspect-ratio:5/4;object-fit:cover;width:100%;box-shadow:var(--shadow)}
+.about p{color:var(--ink-soft);margin:0 0 14px}
+.about dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:20px 0 0;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.about dt{font-weight:700;color:var(--ink)}
+.about dd{margin:0;color:var(--ink-soft)}
+
+/* faq */
+.faq{max-width:820px;display:grid;gap:12px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 18px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:700;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:800 1.4rem/1 var(--display);color:var(--barn)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:0 0 16px;color:var(--ink-soft)}
+
+/* contact */
+.contact{background:var(--pasture);color:#f6f1e4;padding:64px 0}
+:root[data-theme="dark"] .contact{background:#2c331b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact{background:#2c331b}}
+.contact-grid{display:grid;gap:28px}
+@media (min-width:860px){.contact-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.contact h2{font-size:clamp(2.3rem,6vw,3.6rem);font-weight:900;margin-bottom:12px}
+.contact p{margin:0 0 20px;max-width:48ch;opacity:.92}
+.contact .btn-barn{background:var(--yolk);color:#24170a}
+.contact .btn-barn:hover{background:#f0b54a}
+.contact .btn-ghost{color:#fff}
+.contact-list{list-style:none;margin:0;padding:22px;display:grid;gap:14px;background:rgba(0,0,0,.18);border-radius:var(--radius)}
+.contact-list li{display:grid;gap:2px}
+.contact-list span{font:700 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.contact-list a,.contact-list b{color:#fff;font-size:1.12rem;font-weight:600;text-decoration:none}
+.contact-list a:hover{text-decoration:underline}
+
+footer{padding:34px 0 44px;font-size:.88rem;color:var(--ink-soft);border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:10px}
+footer a{color:var(--ink-soft)}
+footer .foot-brand{font:800 1.3rem/1 var(--display);text-transform:uppercase;color:var(--ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="RMB Farm LLC, back to top">
+      <span class="brand-mark" aria-hidden="true">RMB</span>
+      <span class="brand-name">RMB Farm<small>NEW CARLISLE, OHIO</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#raise">What We Raise</a>
+      <a href="#buy">How to Buy</a>
+      <a href="#about">The Farm</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-barn" href="tel:+19376053352">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="call-short">Call</span><span class="call-long">937-605-3352</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-label="Welcome">
+    <img src="img/hero-barns.jpg" alt="Barns and twin silos on a grassy rise behind a fenced pasture under a pale sky" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">Livestock farm &middot; Clark County, Ohio</span>
+      <h1>Raised on <span>Free Road</span></h1>
+      <p class="lede">RMB Farm LLC is a family-run livestock farm just outside New Carlisle, raising pigs, chickens and farm eggs. What&rsquo;s ready changes with the season, so the easiest way to buy is a quick call.</p>
+      <div class="hero-actions">
+        <a class="btn btn-barn" href="tel:+19376053352">Call 937-605-3352</a>
+        <a class="btn btn-ghost" href="#raise">See what we raise</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="facts">
+    <ul class="wrap" aria-label="Farm at a glance">
+      <li><b>Pigs &middot; Eggs &middot; Chicken</b><span>What the farm raises</span></li>
+      <li><b>Family-run</b><span>A local livestock producer</span></li>
+      <li><b><a href="https://www.google.com/maps/search/?api=1&query=788+Free+Rd+New+Carlisle+OH+45344">788 Free Rd</a></b><span>New Carlisle, OH 45344</span></li>
+      <li><b><a href="tel:+19376053352">937-605-3352</a></b><span>Call or text for availability</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="raise">
+    <div class="wrap">
+      <p class="kicker">From our pasture to your table</p>
+      <h2>What We Raise</h2>
+      <p class="intro">We keep things simple: pigs, chickens and the eggs they lay. Supply depends on the season and what&rsquo;s ready, so we don&rsquo;t post a menu or prices here. Give us a call and we&rsquo;ll tell you what we have.</p>
+      <div class="raise">
+        <article class="card">
+          <img src="img/pigs.jpg" alt="Black-and-white pigs rooting on a leafy hillside beside a wooden fence and shed (representative stock photo)" loading="lazy">
+          <div class="card-body">
+            <h3>Pigs</h3>
+            <p>Farm-raised pigs from a local Clark County farm. Ask what&rsquo;s available right now and how you&rsquo;d like to buy.</p>
+            <span class="tag">Call for availability</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/eggs.jpg" alt="Brown and cream farm eggs nestled in straw (representative stock photo)" loading="lazy">
+          <div class="card-body">
+            <h3>Farm Eggs</h3>
+            <p>Fresh eggs from the farm&rsquo;s own hens. Supply rises and falls with the flock and the season, so call ahead.</p>
+            <span class="tag">Call for availability</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/hens.jpg" alt="Mixed flock of white, black-and-white and red chickens on green grass (representative stock photo)" loading="lazy">
+          <div class="card-body">
+            <h3>Chicken</h3>
+            <p>Chickens raised right here on the farm. Ask about what&rsquo;s ready, timing and anything you need to know before you buy.</p>
+            <span class="tag">Call for availability</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="buy">
+    <div class="wrap">
+      <p class="kicker">No apps, no checkout</p>
+      <h2>How to Buy</h2>
+      <p class="intro">Buying from a small farm works best person to person. Here&rsquo;s how it goes.</p>
+      <ol class="steps">
+        <li><h3>Call or text</h3><p>Reach the farm at <a href="tel:+19376053352">937-605-3352</a> and tell us what you&rsquo;re looking for.</p></li>
+        <li><h3>Ask what&rsquo;s ready</h3><p>We&rsquo;ll let you know what&rsquo;s available now, the price, and when more is coming.</p></li>
+        <li><h3>Set a time</h3><p>Agree on a time and the details together, then come out to Free Road.</p></li>
+      </ol>
+      <p class="note"><strong>Please call before you visit.</strong> This is a working farm with animals to care for, so arranging a time first means someone will be there to help you.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap about">
+      <div>
+        <p class="kicker">The farm</p>
+        <h2>A Working Farm Outside New Carlisle</h2>
+        <p>RMB Farm LLC is a family-run livestock farm on Free Road, in the farm country of western Clark County between New Carlisle and Springfield.</p>
+        <p>It&rsquo;s a small, local operation: the kind of place where you call the farm directly and buy from the people who raise the animals.</p>
+        <dl>
+          <dt>Business</dt><dd>RMB Farm LLC</dd>
+          <dt>Type</dt><dd>Livestock producer</dd>
+          <dt>Address</dt><dd>788 Free Rd, New Carlisle, OH 45344</dd>
+          <dt>Phone</dt><dd><a href="tel:+19376053352">+1 937-605-3352</a></dd>
+        </dl>
+      </div>
+      <img src="img/barn.jpg" alt="Red barn with white trim and a silo set against green trees and a grassy field (representative stock photo)" loading="lazy">
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="faq">
+    <div class="wrap">
+      <p class="kicker">Good to know</p>
+      <h2>Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Why aren&rsquo;t prices listed?</summary>
+          <p>What&rsquo;s available changes through the year, and so does pricing. Call 937-605-3352 and we&rsquo;ll give you current availability and prices.</p>
+        </details>
+        <details>
+          <summary>Can I just stop by?</summary>
+          <p>Please call or text first. It&rsquo;s a working farm, and setting a time makes sure someone is there and what you want is ready.</p>
+        </details>
+        <details>
+          <summary>Where exactly is the farm?</summary>
+          <p>788 Free Rd, New Carlisle, Ohio 45344. <a href="https://www.google.com/maps/search/?api=1&query=788+Free+Rd+New+Carlisle+OH+45344">Open it in Google Maps</a> for directions.</p>
+        </details>
+        <details>
+          <summary>Do you sell eggs year-round?</summary>
+          <p>Egg supply follows the hens and the season. Call ahead to check what&rsquo;s on hand.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-label="Contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Call the Farm</h2>
+        <p>Looking for pork, chicken or eggs from a local farm? Call or text RMB Farm and ask what&rsquo;s available this week.</p>
+        <div class="hero-actions">
+          <a class="btn btn-barn" href="tel:+19376053352">Call 937-605-3352</a>
+          <a class="btn btn-ghost" href="sms:+19376053352">Send a text</a>
+        </div>
+      </div>
+      <ul class="contact-list">
+        <li><span>Phone</span><a href="tel:+19376053352">+1 937-605-3352</a></li>
+        <li><span>Farm address</span><a href="https://www.google.com/maps/search/?api=1&query=788+Free+Rd+New+Carlisle+OH+45344">788 Free Rd, New Carlisle, OH 45344</a></li>
+        <li><span>Visiting</span><b>By arrangement, so please call first</b></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">RMB Farm LLC</div>
+    <div>788 Free Rd, New Carlisle, OH 45344 &middot; <a href="tel:+19376053352">937-605-3352</a></div>
+    <div>Photos are representative stock images from <a href="https://unsplash.com">Unsplash</a> (free license), not photos of RMB Farm.</div>
+    <div>&copy; <span id="yr">2026</span> RMB Farm LLC. Sample website by AiroxLab.</div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="https://smb.airoxlab.com/api/t/script" defer></script>
+</body>
+</html>
